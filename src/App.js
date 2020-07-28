@@ -5,8 +5,8 @@ import CharOutput from './CharOutput/CharOutput';
 
 class App extends Component {
   state = {
-    inputString: null,
-    stringLength: 0
+    inputString: '',
+    stringLength: 0,
   }
 
   textChangeListener = (event) => {
@@ -22,21 +22,22 @@ class App extends Component {
 
   render(){
 
-    // let chars = null;
-    // let charsArray = this.state.inputString.split;
-    // chars = (
-    //     <div>
-    //       {charsArray.map((char) => {
-    //         return <CharOutput/>
-    //     })}
-    //     </div>
-    // );
+    let chars = null;
+    let charsArray = this.state.inputString.split('');
+    chars = (
+        <div>
+          {charsArray.map((char) => {
+            return <CharOutput character={char}/>
+        })}
+        </div>
+    );
 
 
     return (
       //create input with change listener that outputs the length of entered text
       <div className='App'>
         <input type='text' onChange={this.textChangeListener}></input>
+        {chars}
         <p>{this.state.stringLength}</p>
         <Validation textLength={this.state.stringLength}/>
       </div>

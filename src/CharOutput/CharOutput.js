@@ -1,9 +1,11 @@
 import React from 'react'
-import Char from './CharOutput.css'
+import './CharOutput.css'
 
 const charOutput = (props) => {
     return (
-        <div className='Char'></div>
+        <div className="Char">
+            {props.character}
+        </div>
     )
 }
 
