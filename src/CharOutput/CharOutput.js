@@ -4,7 +4,7 @@ import './CharOutput.css'
 const charOutput = (props) => {
     return (
         <div className="Char">
-            {props.character}
+            <p onClick={props.delete}>{props.character}</p>
         </div>
     )
 }

@@ -15,22 +15,33 @@ class App extends Component {
     this.setState(
       {
         stringLength: stringLength,
-        inputString: inputString
+        inputString: inputString, 
+        charsArray: this.state.inputString.split('')
       }
       )
+  }
+
+  deleteChar = (charIndex) => {
+    const chars = [...this.state.charsArray];
+    chars.splice(charIndex, 1);
+    this.setState({charsArray: chars})
   }
 
   render(){
 
     let chars = null;
-    let charsArray = this.state.inputString.split('');
+    if(this.state.charsArray != null){
     chars = (
         <div>
-          {charsArray.map((char) => {
-            return <CharOutput character={char}/>
+          {this.state.charsArray.map((char, index) => {
+            return <CharOutput 
+            character={char}
+            click={() => this.deleteChar(index)}/>
         })}
         </div>
     );
+    }
+    
 
 
     return (
