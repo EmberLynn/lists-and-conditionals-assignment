@@ -6,10 +6,9 @@ class App extends Component {
     stringLength: 0
   }
 
-  //still need to list event as argument if using it
   textChangeListener = (event) => {
-    const inputString = event.target.value;
-    const stringLength = inputString.length;
+    const stringLength = event.target.value.length;
+    this.setState({stringLength: stringLength})
   }
 
   render(){
@@ -17,6 +16,7 @@ class App extends Component {
       //create input with change listener that outputs the length of entered text
       <div className='App'>
         <input type='text' onChange={this.textChangeListener}></input>
+        <p>{this.state.stringLength}</p>
       </div>
       );
   }
