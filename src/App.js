@@ -30,10 +30,12 @@ class App extends Component {
     const chars = [...this.state.charsArray];
     chars.splice(charIndex, 1);
     const inputString = chars.join('');
+    const stringLength = inputString.length;
     this.setState(
       {
         charsArray: chars,
-        inputString: inputString
+        inputString: inputString,
+        stringLength: stringLength
       }
       )
   }
