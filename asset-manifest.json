@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lists-and-conditionals-assignment/static/css/main.682a09c1.chunk.css",
+    "main.js": "/lists-and-conditionals-assignment/static/js/main.410bccb5.chunk.js",
+    "main.js.map": "/lists-and-conditionals-assignment/static/js/main.410bccb5.chunk.js.map",
+    "runtime-main.js": "/lists-and-conditionals-assignment/static/js/runtime-main.3b29b647.js",
+    "runtime-main.js.map": "/lists-and-conditionals-assignment/static/js/runtime-main.3b29b647.js.map",
+    "static/js/2.271d5ae5.chunk.js": "/lists-and-conditionals-assignment/static/js/2.271d5ae5.chunk.js",
+    "static/js/2.271d5ae5.chunk.js.map": "/lists-and-conditionals-assignment/static/js/2.271d5ae5.chunk.js.map",
+    "index.html": "/lists-and-conditionals-assignment/index.html",
+    "precache-manifest.42f0f8dc65bfb2b44e11e8cd0f22c8f7.js": "/lists-and-conditionals-assignment/precache-manifest.42f0f8dc65bfb2b44e11e8cd0f22c8f7.js",
+    "service-worker.js": "/lists-and-conditionals-assignment/service-worker.js",
+    "static/css/main.682a09c1.chunk.css.map": "/lists-and-conditionals-assignment/static/css/main.682a09c1.chunk.css.map",
+    "static/js/2.271d5ae5.chunk.js.LICENSE.txt": "/lists-and-conditionals-assignment/static/js/2.271d5ae5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b29b647.js",
+    "static/js/2.271d5ae5.chunk.js",
+    "static/css/main.682a09c1.chunk.css",
+    "static/js/main.410bccb5.chunk.js"
+  ]
+}
