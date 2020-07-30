@@ -1,12 +1,10 @@
 import React from 'react';
 
-//takes the stringLength passed to it from App.js and checks for length then displays a message
+//takes the string length passed to it from App.js and checks for length then displays a message
 const validation = (props) => {
-    let message = null;
-    if(props.textLength > 8){
-        message = 'Text long enough';
-    }
-    else {
+    
+    let message = 'Text long enough';
+    if(props.textLength < 8){
         message = 'Text not long enough';
     }
 
